@@ -1,0 +1,396 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>最新网址永久发布页</title>
+<meta name="description" content="猫爪社防走丢永久页面，请牢记永久地址，方便找回回家的路。" />
+<meta name="applicable-device" content="pc,mobile" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true"/>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<style>
+@charset "utf-8";
+/* 简单流媒体
+   注意: 流媒体要求您删除 HTML 中媒体的高度和宽度属性
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+body {
+	background-color: #333333;
+}
+/* IE 6 不支持最大宽度，因此默认为 100% 宽度 */
+.ie6 img {
+	width:100%;
+}
+
+/* 移动设备布局: 480px 及更低。 */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.top {
+	font-size: 1.8em;
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #FFF;
+}
+.under  {
+	text-align: center;
+	color: #FFF;
+	font-size: 1em;
+	line-height: 5em;
+}
+.tip {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #3BAEAB;
+	background-color: #FB5E58;
+	padding: 20px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	color: #FFF;
+	}
+.main {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F4F4F4;
+	color: #333;
+	padding: 20px;
+}
+.fav {
+	background-color: #FB5E58;
+	color: #FFF;
+	font-size: 1.2em;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	width: 100%;
+}
+.box {
+	float: left;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+.box-name {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	font-weight: bold;
+	color: #333;
+}
+.box-title-box {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.box-title {
+	font-size: 1.4em;
+	line-height: 2.5em;
+	font-weight: bold;
+	}
+.box-url {
+	font-size: 0.6em;
+	line-height: 1em;
+}
+.box-url a{
+	color: #FB5E58;
+	text-decoration: none;
+}
+.box-info {
+	font-size: 1.2em;
+	line-height: 1.6em;
+	margin-bottom: 15px;
+	color: #666;
+}
+.footer {
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 2.2em;
+	margin-bottom: 30px;
+	color: #FFF;
+}
+.box2 {
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 2.2em;
+	margin-bottom: 30px;
+	}
+/* 平板电脑布局: 481px 至 768px。样式继承自: 移动设备布局。 */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.top {
+	font-size: 24px;
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.tip {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #3BAEAB;
+	background-color: #FB5E58;
+	padding: 30px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFF;
+	}
+.main {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F4F4F4;
+	color: #333;
+	padding: 20px;
+}
+.fav {
+	background-color: #FB5E58;
+	color: #FFF;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	width: 100%;
+}
+.box {
+	float: left;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+.box-title-box {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.box-title {
+	font-size: 1.4em;
+	line-height: 1.5em;
+	font-weight: bold;
+	}
+.box-name {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #333;
+}
+.box-url {
+	font-size: 20px;
+	line-height: 24px;
+}
+.box-url a{
+	color: #FB5E58;
+	text-decoration: none;
+}
+.box-info {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 15px;
+	color: #666;
+}
+.footer {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.box2 {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	}
+
+}
+
+/* 桌面电脑布局: 769px 至最高 1232px。样式继承自: 移动设备布局和平板电脑布局。 */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 100%;
+	max-width: 1232px;
+	padding-left: 0%;
+	padding-right: 0%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.top {
+	font-size: 24px;
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.tip {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #3BAEAB;
+	background-color: #FB5E58;
+	padding: 30px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFF;
+	}
+.main {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F4F4F4;
+	color: #333;
+	padding: 20px;
+}
+.fav {
+	background-color: #FB5E58;
+	color: #FFF;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	width: 100%;
+}
+.box {
+	float: left;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+.box-title-box {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.box-title {
+	font-size: 2.4em;
+	line-height: 2.5em;
+	font-weight: bold;
+	}
+.box-name {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #333;
+}
+.box-url {
+	font-size: 20px;
+	line-height: 24px;
+}
+.box-url a{
+	color: #FB5E58;
+	text-decoration: none;
+}
+.box-info {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 15px;
+	color: #666;
+}
+.footer {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.box2 {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	}
+}
+
+
+</style>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+  
+  <div class="top">请收藏该页面至书签</div>
+  <div style="clear:both"></div>
+  <div class="main">
+  
+  <div class="fav">请按 CTRL+D 添加至网址收藏夹</div>
+  
+    
+  <div class="box">
+  <div class="box-name">
+    <p class="box-url"> 当前最新：<a href="https://mzsns.com" target="_blank">https://mzsns.com</a></p>
+    <p class="box-url">备用网址</p>
+    <p class="box-url"> <a href="https://mzsns.net">https://mzsns.net</a>  </p>
+  </div>
+  </div>
+  <div style="clear:both"></div>
+
+  <div class="box">
+  <div class="box-name">
+    <p class="box-url">本防和谐页面的防和谐网址，请牢记。</p>
+    <p class="box-url"><a href="https://maozhua.me" target="_blank">https://maozhua.me</a></p>
+  </div>
+  </div>
+  <div style="clear:both"></div>
+  
+   
+  <div style="clear:both"></div>
+  
+</div>
+
+  <div class="under">© 2018-2020 猫爪社.</div>
+  <div style="clear:both"></div>
+
+  </div>
+</div>
+</body>
+</html>
